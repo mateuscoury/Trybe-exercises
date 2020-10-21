@@ -1,0 +1,13 @@
+body{
+    font-family: monospace;
+}
+.transform{
+   margin-left: 300px;
+   top: 200px ;
+   position: absolute;
+   padding-left: 50px;
+}
+.listadisplay li{
+    display: inline-block;
+    
+}
