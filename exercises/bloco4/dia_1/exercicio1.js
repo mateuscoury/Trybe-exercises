@@ -169,3 +169,49 @@ if(a % 2 == 1 || b % 2 == 1 || c % 2 == 1 ) {
 
 
 */
+
+/*
+let a = 10  ;
+let imposto = a * 0.2
+let b = 20 ;
+let valorlucro = b - ( a + imposto) ;
+
+if( a && b <  0){
+    console.log("ERRO") ;
+}
+
+
+console.log(valorlucro * 1000)
+*/
+
+let salario = 1200.0 ;
+let inss  ;
+let ir ;
+let resultado = salario - (inss + ir)
+
+if(salario <= 1556.94) {
+    inss = salario * 0.8
+}
+else if(salario >= 1556.95 && salario <= 2594.92 ){
+    inss = salario * 0.9
+}
+else if (salario >= 2594.93 && salario <= 5189.92){
+    inss = salario * 0.11
+}
+else if (salario > 5189.82){
+    inss = 570.88
+}
+
+
+
+if(salario <= 1903.98) {
+    ir = 5
+}
+
+else if(salario >= 1903.99 && salario <= 2826.65 ){
+    ir = salario 
+}
+
+
+
+console.log (resultado) ;
