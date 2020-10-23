@@ -63,37 +63,109 @@ console.log("zero")
 
 */
 
-/* Sexto ex
+/*
 
-let nomedapeca = "a";
+let nomedapeca = "B";
+
 
 
 switch (nomedapeca) {
-    case "a":
-        console.log("diagonal");
-        break;
+   case "a":
+       console.log("diagonal");
+       break;
 
-    case "b":
-        console.log("avancar")
+   case "b":
+       console.log("avancar")
 
-        break;
+       break;
 
-    case "c":
-        console.log("qualquer direcao")
-        break;
+   case "c":
+       console.log("qualquer direcao")
+       break;
 
-        default :
-        console.log("nao existe") ;
-        
+       default :
+       console.log("nao existe") ;
+       
 
 }
 
 */
 
+/*
+
+let nota =  -89
+
+if (nota >= 90 && nota < 100) {
+    console.log("A")
+}
+
+    else if (nota >= 80 && nota < 90) {
+        console.log("B")
+    }
+        else if (nota >= 70 && nota < 80) {
+            console.log("C")
+        } 
+            else if (nota >= 60 && nota < 70) {
+                console.log("D");
+            }
+                else if (nota >= 50 && nota < 60) {
+                    console.log("E");
+                }
+                    else if (nota < 50 && nota > 0) {
+                        console.log("F");
+                    }
+                        else if ( nota < 0 || nota > 100) {
+                            console.log("ERROR") ;
+                        }
+   
+
+
+
+*/
+
+/*
+
+
+let a = 5 ;
+
+let b = 1; 
+
+let c = 19 ;
 
 
 
 
 
+if(a % 2 == 0 || b % 2 == 0 || c % 2 == 0 ) {
+    console.log("true")
+}
+    else {
+        console.log("false") ;
+    }
+ 
 
 
+*/
+
+/*
+
+let a = 4 ;
+
+let b = 10; 
+
+let c = 12 ;
+
+
+
+
+
+if(a % 2 == 1 || b % 2 == 1 || c % 2 == 1 ) {
+    console.log("true")
+}
+    else {
+        console.log("false") ;
+    }
+ 
+
+
+*/
