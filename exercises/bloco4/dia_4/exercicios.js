@@ -72,3 +72,83 @@ let info1 = {
 console.log(info)
 
 */
+
+
+/* Sexto
+
+function verificaPalindrome(palavra) {
+    let arrayLetras = palavra.split("");
+    let isPalindrome = true;
+    for (let index in arrayLetras) {
+      if (arrayLetras[index] != palavra[(palavra.length - 1) - index]) {
+        isPalindrome = false;
+      }
+    }
+    return isPalindrome;
+  }
+  
+  
+  console.log(verificaPalindrome('arara')); 
+  console.log(verificaPalindrome('desenvolvimento')); 
+
+  */ 
+
+/* Setimo
+
+
+ function indiceDoMaior(numeros) {
+    let indiceMaior = 0;
+    for (let indice in numeros) {
+      if (numeros[indiceMaior] < numeros[indice]) {
+        indiceMaior = indice;
+      }
+    }
+    return indiceMaior;
+  }
+  
+  console.log(indiceDoMaior([2, 3, 6, 7, 10, 1])); //4
+
+  */
+
+
+/* Indice menor
+
+ function indiceDoMenor(numeros) {
+    let indiceMenor = 0;
+    for (let indice in numeros) {
+      if (numeros[indiceMenor] > numeros[indice]) {
+        indiceMenor = indice;
+      }
+    }
+    return indiceMenor;
+  }
+  
+  console.log(indiceDoMenor([2, 3, 6, 7, 10, 1])); //4
+
+
+  */
+
+  /* Maior nome 
+  
+  
+  function bla (array) {
+
+    let maior = array [0] ;
+    
+    for (let index in array) {
+        if(maior.length < array[index].length) {
+            maior = array[index ] ;
+        }
+
+
+
+    }
+
+
+
+    return maior
+  }
+
+  console.log(bla(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
+
+  */
