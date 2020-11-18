@@ -22,6 +22,7 @@
 
     //Informacoes contidas dentro do evento pois so depois q o usuario clickar e que vai estar setados os valores
     button.addEventListener("click",function (event){
+        event.preventDefault();
        
         let data = document.querySelector("#datainicio").value
         let array = data.split("/") //transforma a string passada em array e divide os indices pelo separador "/"
