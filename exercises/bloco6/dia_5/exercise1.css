@@ -50,9 +50,29 @@ figure {
     margin: 10px;
 }
 #divelement{
+   display: flex;
     flex-direction: column;
   
 }
+#subdiv1{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%
+    
+    
+
+}
+#subdiv2{
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column;
+    max-width: 100%
+    
+    
+  
+}
+
 
 
 
@@ -62,16 +82,19 @@ figure {
 @media screen and (min-width:960px){
 
     body{
-        font-size: 15px;
+        font-size: 20px;
         background-color: blue;
         margin:100px;
+        color: white;
+        font-family: monospace;
        
     }
     #divelement{
         flex-direction: row;
       
       border: 1px solid black;
-      justify-content: space-between;
+      justify-content: center;
+      
     }
     img{
 
@@ -84,8 +107,8 @@ figure {
         border: 2px solid black;
         display: flex;
         flex-direction: column;
-        max-width: 40%;
-        align-items: center;
+        max-width: 50%
+        
         
 
     }
@@ -93,8 +116,8 @@ figure {
         border: 2px solid black;
         display: flex;
         flex-flow: column;
-        max-width: 40%;
-        align-items: center;
+        max-width: 50%
+        
         
       
     }
