@@ -16,7 +16,22 @@ img {
 figure {
     margin: 0;
 }
+#divelement{
+    display: flex;
+    flex-flow: row
+   
+    
+}
+#subdiv1{
+    display: flex;
 
+
+}
+#subdiv2{
+    display: flex;
+   
+    
+}
 
 
 @media screen and (max-width:375px){
@@ -34,6 +49,56 @@ img {
 figure {
     margin: 10px;
 }
+#divelement{
+    flex-direction: column;
+  
+}
+
+
 
 
 }
+
+@media screen and (min-width:960px){
+
+    body{
+        font-size: 15px;
+        background-color: blue;
+        margin:100px;
+       
+    }
+    #divelement{
+        flex-direction: row;
+      
+      border: 1px solid black;
+      justify-content: space-between;
+    }
+    img{
+
+    max-width: 100% ;
+      margin-top: 10px;
+    }
+    
+   
+    #subdiv1{
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        max-width: 40%;
+        align-items: center;
+        
+
+    }
+    #subdiv2{
+        border: 2px solid black;
+        display: flex;
+        flex-flow: column;
+        max-width: 40%;
+        align-items: center;
+        
+      
+    }
+    
+    
+    
+    }
