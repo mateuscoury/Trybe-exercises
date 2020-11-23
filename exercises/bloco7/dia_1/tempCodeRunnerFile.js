@@ -1,7 +1,12 @@
-function userInfo() {
-  let userEmail = 'maria@email.com';
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+let array = [];
 
-  // Toda expressão dentro do escopo da função userInfo tem acesso à variável userEmail
-  console.log(userEmail);
+for (let index = 0; index < oddsAndEvens.length; index++) {
+  for (let indexI = 0; indexI < oddsAndEvens.length; indexI++) {
+    if (oddsAndEvens[index] < oddsAndEvens[indexI]) {
+      oddsAndEvens.push(oddsAndEvens[index]);
+    }
+  }
 }
-userInfo();
+
+console.log(array);
