@@ -33,7 +33,39 @@ console.log(lista(lesson3));
 //3
 
 const tamanhp = (objeto) => {
-  const arrayobj = Object.entries(objeto).length;
+  const arrayobj = Object.keys(objeto).length;
   console.log(arrayobj);
 };
 console.log(tamanhp(lesson3));
+
+//4
+
+const valoresobj = (objeto) => {
+  const listavalores = Object.values(objeto);
+  console.log(listavalores);
+};
+console.log(valoresobj(lesson3));
+
+//5
+//lembrar das chaves
+
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+console.log(allLessons);
+//6
+const numerot = (obj) => {
+  //pegando o objeto de cima
+  let total = 0; //definindo o total inicial para incrementar no loop
+  const array = Object.keys(obj); //pegando os keys
+  console.log(array);
+  for (i in array) {
+    total += obj[array[i]].numeroEstudantes; // objeto na posicao lessons com o parametro de numeroestudantes
+  }
+  return total;
+};
+console.log(numerot(allLessons));
+
+const getvalor = (obj, chave) => {
+  const valor = Object.values(obj)[chave];
+  console.log(valor);
+};
+console.log(getvalor(lesson1, 1));
