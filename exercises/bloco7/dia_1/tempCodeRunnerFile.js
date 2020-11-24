@@ -1,12 +1,14 @@
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-let array = [];
 
-for (let index = 0; index < oddsAndEvens.length; index++) {
-  for (let indexI = 0; indexI < oddsAndEvens.length; indexI++) {
-    if (oddsAndEvens[index] < oddsAndEvens[indexI]) {
-      oddsAndEvens.push(oddsAndEvens[index]);
-    }
-  }
-}
+const obje = {
+  name: 'Mateus',
+  sobrenome: 'Coury',
+  profissao: 'estudante',
+};
 
-console.log(array);
+let values = Object.values(obje);
+
+let keyss = Object.keys(obje);
+
+console.log(values);
+
+console.log(keyss);
