@@ -17,7 +17,7 @@ const expected = division(9, 3);
 assert.equal(expected, 3, 'Nove dividido por três é igual a três');
  */
 
-const assert = require('assert');
+/* const assert = require('assert');
 
 const list1 = [1, 2, 3, 4, 5];
 const list2 = [1, 2, 3, 4, 5];
@@ -57,3 +57,67 @@ const summationOf = (number) => {
 };
 
 assert.strictEqual(summationOf(4), 10);
+ */
+
+/* 
+ex 1
+
+const assert = require('assert');
+
+function sum(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('parameters must be numbers');
+  }
+
+  return a + b;
+}
+
+assert.strictEqual(sum('4', '5'), 9, 'Não e o resultado esperado');
+ */
+/* 
+ex2
+
+const assert = require('assert');
+
+function myRemove(arr, item) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i += 1) {
+    if (item !== arr[i]) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+
+assert.strictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+ */
+
+/* const assert = require('assert');
+
+function myRemoveWithoutCopy(arr, item) {
+  for (let i = 0, len = arr.length; i < len; i += 1) {
+    if (arr[i] === item) {
+      arr.splice(i, 1);
+      i -= 1;
+      len -= 1;
+    }
+  }
+
+  return arr;
+}
+
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
+
+//assert.notStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]); */
+
+const assert = require('assert');
+
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}
+
+// implemente seus testes aqui
