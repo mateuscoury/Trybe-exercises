@@ -63,8 +63,14 @@ const books = [
   },
 ];
 
-function authorBornIn1947(livro) {
-  return books.find((book) => book.author.birthYear === 1947).author.name;
+function smallerName() {
+  let nameBook;
+  books.forEach((elemento) => {
+    if (!nameBook || elemento.name.length < nameBook.length) {
+      nameBook = elemento.name;
+    }
+  });
+  return nameBook;
 }
 
-assert.equal(authorBornIn1947(), 'Stephen King');
+assert.equal(smallerName(), 'Duna');
