@@ -1,12 +1,13 @@
 import React from 'react'
 
 class TextInput extends React.Component{
+  
   render(){
-    const {maxLength,type,required} = this.props
+    const {maxLength,type,required,nome} = this.props
     return(
       <label>
-      Nome:
-      <input type={type} maxLength={maxLength} required={required} id='nome'></input>
+      {nome}:
+      <input type={type} maxLength={maxLength} required={required} id='nome'onKeyUp="this.value = this.value.toUpperCase();" ></input>
     </label>
     )
   }

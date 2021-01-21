@@ -10,7 +10,8 @@ class Forms extends React.Component{
     return (
       <section>
         <fieldset>
-          <InputText type='text' maxLength='40'/>
+          <InputText type='text' maxLength='40'required='true' nome='Nome'/>
+          <InputText type='email' maxLength='50' required='true'nome='email'/>
         </fieldset>
       </section>
     )
